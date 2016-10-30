@@ -8,4 +8,4 @@ def unique(iterable, seen=None):
 
 xs = [1, 1, 2, 3, 5]
 print(list(unique(xs)))
-print(1 in unique(xs))
+print(4 in unique(xs))
