@@ -7,4 +7,5 @@ def unique(iterable, seen=None):
 
 
 xs = [1, 1, 2, 3, 5]
-list(unique(xs))
+print(list(unique(xs)))
+print(1 in unique(xs))
