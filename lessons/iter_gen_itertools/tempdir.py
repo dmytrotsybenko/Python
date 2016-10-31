@@ -5,14 +5,14 @@ import os
 
 
 @contextmanager
-def tempdir():
-    outdir = tempfile.mkdtemp()  # создание временного каталога
+def tempdir():                                                          # __init__
+    outdir = tempfile.mkdtemp()  # создание временного каталога         # __enter__
     try:
         yield outdir
     except:
         pass
     finally:
-        shutil.rmtree(outdir)  # удалиние дерева
+        shutil.rmtree(outdir)  # удалиние дерева                        # __exit__
 
 
 print(os.getcwd())  # текущий каталог
