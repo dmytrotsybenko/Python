@@ -1,4 +1,4 @@
-def import_wrapper(name, *args, imp="__import__"):
+def import_wrapper(name, *args, imp=__import__):
     print("importing", name)
     return imp(name, *args)
 
