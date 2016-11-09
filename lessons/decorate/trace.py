@@ -2,7 +2,7 @@ def trace(func):
     def inner(*args, **kwargs):
         print(func.__name__, args, kwargs)
         return func(*args, **kwargs)
-    return inner
+    return inner 
 
 
 @trace
